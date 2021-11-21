@@ -1,0 +1,30 @@
+
+.menu {
+	margin-left: 30%;
+	margin-right: 30%;
+	padding: 10px; 
+  	border-radius: 50px;
+	
+}
+
+.menu ul {
+	text-align: center;
+	list-style: none;
+	display: inline-block;
+}
+
+.menu ul li {
+	float: left;
+  	width: auto;
+  	cursor: pointer;
+	border-radius: 50px;
+	color: #fff;
+	margin-top:25px; 
+	text-transform: uppercase;
+
+}
+
+.menu ul li:hover {
+	background: #000;
+}
+

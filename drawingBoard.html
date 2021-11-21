@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graph Visualizer</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>
+	<div class="show-settings">
+        |||
+    </div>
+
+
+    <canvas style="margin-left: 220px;" id="board">
+        Sorry your browser doesnt support canvas
+    </canvas>
+    <div class="settings">
+        <div class="color-cont">
+        	<div class="toolHeadings">Colors</div>
+            <div class="colors">
+
+                <div class="clr" data-color-name="red"></div>
+                <div class="clr" data-color-name="orange"></div>
+                <div class="clr" data-color-name="yellow"></div>
+                <div class="clr" data-color-name="green"></div>
+                <div class="clr" data-color-name="blue"></div>
+                <div class="clr" data-color-name="pink"></div>
+                <div class="clr" data-color-name="brown"></div>
+                <div class="clr" data-color-name="black"></div>
+                <div class="clr" data-color-name="grey"></div>
+            </div>
+            <input type="hidden" id="color-btn" >
+    	</div>
+
+        <div class="brush-cont">
+        	<div class="toolHeadings">Brushes</div>
+            <div class="brush">
+                <div class="brush-size br1" data-size="5"></div>
+                <div class="brush-size br2" data-size="15"></div>
+                <div class="brush-size br3" data-size="30"></div>
+            </div>
+    		<input type="hidden" id="brush-btn" >
+        </div>
+
+        <div class="eraser">
+        	<div class="toolHeadings">Erasers</div>
+            <div class="erasers">
+            	<button style="border:none;" id="eraser">
+                <i class="fa fa-eraser"></i>
+                </button>
+            </div>
+           
+        </div>
+        <div class="clearScreen">
+            <button id="clearScreen" onclick="clear_canvas();">Clear Screen</button>
+        </div>
+        <div class="vartex">
+            <button id="vartex" onclick="vartex();">Vartex </button>
+        </div>
+        <div class="edges">
+            <button id="edges" onclick="edges();">Edges </button>
+        </div>
+
+        <div class="drawBoard">
+            <button id="drawBoard">Draw</button>
+        </div>
+
+        <div class="toolHeadings1">Input Your Graph</div>
+		<textarea style="padding: 5px; margin:10px; margin-top: 0;margin-bottom: 0px;" id="input_collector" name="input_collector" rows="30" cols="20" placeholder="number_of_nodes number_of_edges
+ 		edges"></textarea>
+		<br>
+     		<button onclick="input();">Visualize</button>
+  		<br>
+
+    </div>
+    <script type="text/javascript" src="drawingBoard.js"></script>
+</body>
+</html>

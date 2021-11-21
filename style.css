@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+
+
+.show-settings{
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    z-index: 5;
+}
+
+
+
+
+.settings{
+    padding-top: 40px;
+    position: absolute;
+    height: 100vh;
+    width: 210px;
+    background: rgb(178, 178, 236);
+    top: 0;
+    left: 0;
+    display: flex;
+    /*left: -205px;*/
+    flex-direction: column;
+    z-index: 1;
+}
+
+.open-settings{
+    left: 0;
+}
+
+.settings button{
+    padding: 5px 10px 5px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    outline: none;
+    background: white;
+    font-weight: 500;
+}
+
+.toolHeadings{ 
+    margin: 5px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    width: 70px;
+    padding: 1px;
+    text-align: center;
+    background: #000;
+    color: white;
+
+}
+
+.toolHeadings1{ 
+    margin: 10px;
+    margin-bottom: 0px;
+    width: 170px;
+    padding: 1px;
+    text-align: center;
+    background: #000;
+    color: white;
+
+}
+/* colors */
+
+.colors{
+    display: grid; /*grid*/
+    margin: 5px;
+    margin-left: 25px;
+    margin-top: 0;
+    width: 100px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+     ". . ."
+     ". . ."
+     ". . .";
+
+}
+
+.colors-toggle{
+    display: grid;
+}
+
+.clr{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.clr:nth-child(1){
+    background: red;
+}
+.clr:nth-child(2){
+    background: orange;
+}
+.clr:nth-child(3){
+    background: yellow;
+}
+.clr:nth-child(4){
+    background: green;
+}
+.clr:nth-child(5){
+    background: blue;
+}
+.clr:nth-child(6){
+    background: pink;
+}
+.clr:nth-child(7){
+    background: brown;
+}
+.clr:nth-child(8){
+    background: black;
+}
+.clr:nth-child(9){
+    background: gray;
+}
+
+
+/* brushes */
+
+.brush{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    margin-left: 25px;
+    margin-top: 0;
+    width: 100px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 5px;
+    
+}
+
+.brush-toggle{
+    display: flex;
+}
+
+.brush-size{
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 1);
+    border-radius: 50%;
+}
+
+.br1{
+    height: 10px;
+    width: 10px;
+}
+.br2{
+    height: 20px;
+    width: 20px;
+}
+.br3{
+    height: 30px;
+    width: 30px;
+}
+.erasers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    margin-left: 25px;
+    margin-top: 0;
+    width: 100px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 5px;
+    
+}
